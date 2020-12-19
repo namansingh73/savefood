@@ -5,6 +5,10 @@ const Food = require('./formModel');
 
 
 app.get("/",function(req,res){
+	res.render("mainpage");
+});
+
+app.get("/form",function(req,res){
 	res.render("home");
 });
 
