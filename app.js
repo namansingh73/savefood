@@ -8,10 +8,6 @@ app.get("/",function(req,res){
 	res.render("mainpage");
 });
 
-app.get("/form",function(req,res){
-	res.render("home");
-});
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
 app.use(express.static("public"));
